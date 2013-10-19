@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 
 include_recipe 'docker::default'
-include_recipe 'jenkins::server'
+include_recipe 'jenkin-docker::_jenkins'
 
 
 [ "build-essential",
@@ -29,20 +29,3 @@ end
     gem_binary "/usr/bin/gem1.9.1"
   end
 end
-
-
-%w(git).each do |plugin|
-  jenkins_cli "install-plugin #{plugin}"
-  jenkins_cli "safe-restart"
-end
-
-#jenkins ALL=NOPASSWD: ALL in sudo
-#for bundle install
-#
-#
-#
-# sudo 'jenkins' do
-#   user      "%jenkins"
-#   commands  ['bundle install']
-#   nopasswd  true
-# end
