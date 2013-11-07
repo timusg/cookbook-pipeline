@@ -10,7 +10,7 @@
       <hudson.plugins.git.UserRemoteConfig>
         <name></name>
         <refspec></refspec>
-        <url>git@github.com:timusg/s3cmd.git</url>
+        <url><%= @git_branch%></url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -48,19 +48,15 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
+    <%@build_steps.each do |step|%>
     <hudson.tasks.Shell>
-      <command>bundle install</command>
+      <command><%= step %></command>
     </hudson.tasks.Shell>
-    <hudson.tasks.Shell>
-      <command>bundle exec foodcritic -f any .</command>
-    </hudson.tasks.Shell>
-    <hudson.tasks.Shell>
-      <command>bundle exec kitchen test</command>
-    </hudson.tasks.Shell>
+  <% end %>
   </builders>
   <publishers>
     <hudson.tasks.Mailer plugin="mailer@1.5">
-      <recipients>sugupta4@gmail.com</recipients>
+      <recipients><%= @email_id%></recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>false</sendToIndividuals>
     </hudson.tasks.Mailer>
