@@ -1,5 +1,5 @@
 # Encoding: utf-8
-# Cookbook Name:: jenkin-docker
+# Cookbook Name:: cookbook-pipeline 
 # Recipe:: _jenkins
 #
 # Copyright (C) 2013 sumit

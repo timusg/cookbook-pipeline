@@ -1,6 +1,6 @@
 # Encoding: utf-8
 
-name             'jenkin-docker'
+name             'cookbook-pipeline'
 maintainer       'sumit'
 maintainer_email 'timusga@gmail.com'
 license          'All rights reserved'

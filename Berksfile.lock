@@ -1,6 +1,6 @@
 {
   "sources": {
-    "jenkin-docker": {
+    "cookbook-pipeline": {
       "path": "."
     },
     "docker": {

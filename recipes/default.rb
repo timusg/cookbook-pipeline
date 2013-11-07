@@ -1,5 +1,5 @@
 # Encoding: utf-8
-# Cookbook Name:: jenkins-dockers
+# Cookbook Name:: cookbook-pipeline
 # Recipe:: default
 #
 # Copyright (C) 2013 sumit
@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 
 #include_recipe 'docker::default'
-include_recipe 'jenkin-docker::_jenkins'
+include_recipe 'cookbook-pipeline::_jenkins'
 
 
 [ "build-essential",
