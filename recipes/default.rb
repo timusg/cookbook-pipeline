@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 
-include_recipe 'docker::default'
+#include_recipe 'docker::default'
 include_recipe 'jenkin-docker::_jenkins'
 
 
