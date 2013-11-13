@@ -24,7 +24,7 @@ pipelines.
    - Defaults to community cookbooks.
 
 * `jobs[:name]`
-   - testing pipeline name
+   - pipeline name
 
 * `jobs[:build_steps]`
    - build steps 
