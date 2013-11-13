@@ -1,7 +1,16 @@
 # cookbook-pipline cookbook
 
-Install docker, jenkins and test kitchen and setup up cookbook testing
-pipelines.
+Install docker, jenkins, test kitchen and setup up testing
+pipelines for cookbook or any other projects.
+
+For local testing issue
+
+``` sh
+vagrant up
+```
+and browse to http://127.0.0.1:8080/ for access jenkins ui
+
+
 
 # Requirements
 

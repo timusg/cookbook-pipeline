@@ -23,7 +23,7 @@ gem_package "test-kitchen" do
   gem_binary "/usr/bin/gem1.9.3"
 end
 
-%w{foodcritic bundler rake}.each do |gem|
+%w{foodcritic bundler rake kitchen-docker}.each do |gem|
   gem_package gem do
     gem_binary "/usr/bin/gem1.9.3"
   end
