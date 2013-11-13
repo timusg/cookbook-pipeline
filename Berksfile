@@ -4,4 +4,3 @@ metadata
 
 cookbook 'docker'
 cookbook 'jenkins'
-#cookbook 'sudo'

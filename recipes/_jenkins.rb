@@ -28,5 +28,12 @@ end
  end
 end
 
+# add jenkins to admin group required for sudo access
+group "admins" do
+  action :modify
+  members "jenkins"
+  append true
+end
+
 # git config --global user.email "you@example.com"
 # git config --global user.name "Your Name"
