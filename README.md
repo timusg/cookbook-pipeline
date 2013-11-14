@@ -1,21 +1,28 @@
 # cookbook-pipline cookbook
 
-Install docker, jenkins, test kitchen and setup up testing
-pipelines for cookbook or any other projects.
+Install docker, jenkins and optionally test kitchen , berkshelf , foodcritic etc.. and setup up build/test
+pipelines for cookbook or any application.
 
-For local testing issue
+# Requirements
+
+  Change .kitchen.yml file of your cookbook to use kitchen-docker
+  plugin, more information is available in the [here](http://www.timusg.com/blog/2013/10/15/testing-cookbook-with-docker-and-test-kitchen/) and [here](http://github.com/timusg/s3cmd/blob/master/.kitchen.yml)
+
+# Usage
+
+Use default recipe to set up docker, jenkins and create jobs baced on attributes.  
+
+## quick test
+
+use vagrant to test locally 
+
+issue command: 
 
 ``` sh
 vagrant up
 ```
 and browse to http://127.0.0.1:8080/ for access jenkins ui
 
-# Requirements
-
-  Change .kitchen.yml file of your cookbook to use kitchen-docker
-  plugin, more information is available in the (blog)[http://www.timusg.com/blog/2013/10/15/testing-cookbook-with-docker-and-test-kitchen/] and (sample file)[http://github.com/timusg/s3cmd/blob/master/.kitchen.yml]
-
-# Usage
 
 # Attributes
 
