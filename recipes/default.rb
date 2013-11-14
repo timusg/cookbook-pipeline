@@ -6,6 +6,6 @@
 #
 # All rights reserved - Do Not Redistribute
 
-#include_recipe 'docker::default'
-#include_recipe 'cookbook-pipeline::_jenkins'
-#include_recipe 'cookbook-pipeline::_system_packages'
+include_recipe 'docker::default'
+include_recipe 'cookbook-pipeline::_jenkins'
+include_recipe 'cookbook-pipeline::_system_packages'
